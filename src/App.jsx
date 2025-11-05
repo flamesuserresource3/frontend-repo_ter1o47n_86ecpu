@@ -18,12 +18,42 @@ function App() {
         <Projects />
 
         {/* Lightweight About anchor to match nav link */}
-        <section id="about" className="mx-auto max-w-6xl px-6 py-16">
+        <section id="about" className="mx-auto max-w-6xl px-6 py-20">
           <div className="rounded-3xl border border-white/60 bg-white/70 p-8 shadow-sm backdrop-blur">
-            <h2 className="text-2xl font-semibold tracking-tight">About</h2>
-            <p className="mt-2 max-w-3xl text-sm text-gray-700">
-              I’m a graphic designer focused on modern, minimalist systems that feel tactile and dimensional. My work blends clean typography with 3D, liquid-glass surfaces, and subtle motion to create premium brand experiences.
+            <h2 className="text-3xl font-semibold tracking-tight">About</h2>
+            <p className="mt-3 max-w-3xl text-base text-gray-700">
+              I’m a graphic designer focused on minimalist systems that feel tactile and dimensional. I blend clean typography with 3D, liquid-glass surfaces, and subtle motion to create premium brand experiences for fintech, SaaS, and culture brands.
             </p>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl border border-white/60 bg-white/70 p-5 shadow-sm">
+                <h3 className="text-sm font-semibold tracking-tight">Core Services</h3>
+                <ul className="mt-3 space-y-2 text-sm text-gray-700">
+                  <li>• Brand identity & systems</li>
+                  <li>• 3D visuals & product shots</li>
+                  <li>• UI art direction</li>
+                  <li>• Motion & launch assets</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-white/60 bg-white/70 p-5 shadow-sm">
+                <h3 className="text-sm font-semibold tracking-tight">Design Approach</h3>
+                <ul className="mt-3 space-y-2 text-sm text-gray-700">
+                  <li>• Discovery & creative strategy</li>
+                  <li>• Rapid visual exploration</li>
+                  <li>• Refine with motion & light</li>
+                  <li>• Deliver a scalable system</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-white/60 bg-white/70 p-5 shadow-sm">
+                <h3 className="text-sm font-semibold tracking-tight">Quick Facts</h3>
+                <ul className="mt-3 grid grid-cols-2 gap-2 text-sm text-gray-700">
+                  <li><span className="font-semibold text-gray-900">40+</span> projects</li>
+                  <li><span className="font-semibold text-gray-900">6+</span> years</li>
+                  <li><span className="font-semibold text-gray-900">15</span> brands</li>
+                  <li><span className="font-semibold text-gray-900">3</span> awards</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

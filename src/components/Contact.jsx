@@ -32,6 +32,12 @@ export default function Contact() {
                 View more work <ArrowRight className="h-4 w-4" />
               </a>
             </div>
+
+            <div className="mt-6 flex items-center gap-4 text-sm text-gray-700">
+              <a href="#" className="hover:text-gray-900 underline-offset-2 hover:underline">Instagram</a>
+              <a href="#" className="hover:text-gray-900 underline-offset-2 hover:underline">Dribbble</a>
+              <a href="#" className="hover:text-gray-900 underline-offset-2 hover:underline">Behance</a>
+            </div>
           </div>
 
           <div>
@@ -54,9 +60,12 @@ export default function Contact() {
                 <label className="text-sm text-gray-700">Message</label>
                 <textarea rows={4} className="rounded-xl border border-gray-200 bg-white/80 px-3 py-2 text-sm text-gray-900 shadow-inner outline-none focus:ring-2 focus:ring-gray-900/10" required />
               </div>
-              <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-sm font-medium text-white shadow hover:bg-gray-800">
-                Send inquiry
-              </button>
+              <div className="flex items-center justify-between">
+                <p className="text-xs text-gray-600">Typical reply within 24h</p>
+                <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-sm font-medium text-white shadow hover:bg-gray-800">
+                  Send inquiry
+                </button>
+              </div>
             </form>
           </div>
         </div>

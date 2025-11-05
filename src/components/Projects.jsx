@@ -48,7 +48,11 @@ const projects = [
 function ProjectCard({ title, desc, tags, link, hue }) {
   return (
     <a href={link} className="group relative overflow-hidden rounded-3xl border border-white/60 bg-white/70 p-5 shadow-sm transition-all hover:shadow-lg backdrop-blur">
+      {/* gradient tint */}
       <div className={`absolute inset-0 opacity-70 transition-opacity group-hover:opacity-90 pointer-events-none bg-gradient-to-br ${hue}`} />
+      {/* soft shine */}
+      <div className="pointer-events-none absolute -top-1/2 left-0 right-0 h-full translate-y-0 rotate-6 bg-white/20 blur-2xl transition-transform duration-500 group-hover:translate-y-16" />
+
       <div className="relative z-10">
         <div className="mb-3 flex items-center justify-between">
           <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
@@ -63,8 +67,12 @@ function ProjectCard({ title, desc, tags, link, hue }) {
               {t}
             </span>
           ))}
+          <span className="rounded-full border border-white/70 bg-white/80 px-2.5 py-1 text-xs text-gray-800 backdrop-blur">Case study</span>
         </div>
-        <div className="mt-5 h-28 w-full rounded-2xl bg-white/60 ring-1 ring-black/5 shadow-inner" />
+        {/* thumbnail placeholder */}
+        <div className="mt-5 h-28 w-full rounded-2xl bg-white/60 ring-1 ring-black/5 shadow-inner">
+          <div className="h-full w-full rounded-2xl bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.7),transparent_60%)]" />
+        </div>
       </div>
     </a>
   );
